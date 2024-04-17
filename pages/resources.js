@@ -2,7 +2,7 @@ import Footer from '@/components/Footer'
 import React from 'react'
 import Link from 'next/link'
 
-export default function () {
+export default function resources() {
   return (
     <div>
   <div className='container-resources text-center'>

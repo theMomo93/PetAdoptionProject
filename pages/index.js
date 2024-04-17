@@ -26,12 +26,12 @@ export default function Home() {
               <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
             </svg>
           </Link>
-          <a
+          <Link
             href="/adoptus"
             className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border border-blue-300 rounded-lg hover:bg-green-100 focus:ring-4 bg-green-800 focus:ring-primary-300 dark:text-white dark:border-green-700 dark:hover:bg-blue-700 dark:focus:ring-green-800"
           >
             Find your Pet!
-          </a>
+          </Link>
         </div>
        
       </div>
