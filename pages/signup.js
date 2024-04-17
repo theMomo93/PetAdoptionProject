@@ -27,7 +27,7 @@ const registerUser = async (e) => {
             <Image
               src="https://pngimg.com/uploads/paw/paw_PNG9.png"
               className="h-20"
-              alt="Logo"
+              alt="Logo of pet adoption"
             />
             PetMatch Login
           </a>

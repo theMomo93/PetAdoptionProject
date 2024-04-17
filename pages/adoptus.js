@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import data from '../pages/api/someData';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AdoptUs() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -21,15 +23,15 @@ export default function AdoptUs() {
         {data.animals.map((animal) => (
           <div key={animal.name} className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-4">
             <div className="flex flex-col h-full max-w-md mx-auto p-6 border-gray-200 rounded-lg bg-yellow-900 bg-opacity-50">
-              <img
+              <Image
                 onClick={() => openModal(animal.image)}
                 src={animal.image}
                 alt={animal.name}
                 className="w-full h-40 object-contain mb-4 cursor-pointer"
               />
-              <a href="#" className="flex-grow">
+              <Link href="#" className="flex-grow">
                 <h5 className="text-lg font-semibold text-gray-900 font-bold">{animal.name} </h5>
-              </a>
+              </Link>
               <p className="mb-2 text-sm text-white-500 dark:text-white-400 font-semibold">{animal.breed}</p>
               <p className="mb-2 text-sm text-white-500 dark:text-white-400 font-semibold">{animal.size}</p>
               <p className="mb-2 text-sm text-white-500 dark:text-white-400 font-semibold">{animal.personality}</p>
@@ -52,7 +54,7 @@ export default function AdoptUs() {
 
       {modalVisible && (
         <div className="modal" onClick={closeModal}>
-          <Image src={selectedImage} alt="Selected Animal" className="modal-content" onClick={(e) => e.stopPropagation()} />
+          <Image src={selectedImage} alt="Selected Animal for adoption" className="modal-content" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
 
