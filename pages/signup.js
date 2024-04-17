@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
+import Paw from "../img/paw_PNG9.png"
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -25,7 +26,7 @@ const registerUser = async (e) => {
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-black">
             <Image
-              src="https://pngimg.com/uploads/paw/paw_PNG9.png"
+              src={Paw}
               className="h-20"
               alt="Logo of pet adoption"
             />
