@@ -78,8 +78,8 @@ export default function AboutUs() {
         </div>
     <h2 className="p-10 pb-0 text-3xl font-black text-gray-700 md:text-5xl dark:text-green-900">Why choose PetMatch?</h2>
         <ul className="p-10">
-            <li><span>Easy Adoption Process:</span> We've streamlined the adoption process to make it simple and accessible for everyone.</li>
-            <li><span>Caring for Bonds:</span> We believe in the enduring nature of the human-animal bond and work to support it throughout the pet's life.</li>
+            <li><span>Easy Adoption Process:</span> We have streamlined the adoption process to make it simple and accessible for everyone.</li>
+            <li><span>Caring for Bonds:</span> We believe in the enduring nature of the human-animal bond and work to support it throughout the pets life.</li>
             <li><span>Quality Care:</span> We partner with reputable shelters and organizations to ensure the well-being of every animal.</li>
         </ul>
 
