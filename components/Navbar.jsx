@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function Navbar() {
@@ -13,7 +14,7 @@ export default function Navbar() {
     <>
       <nav className="border-white-200 dark:bg-green-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <img
+          <Image
             src="https://pngimg.com/uploads/paw/paw_PNG9.png"
             className="h-20"
             alt="Logo"

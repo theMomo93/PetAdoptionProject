@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import React from 'react'
-
+import Link from 'next/link'
 
 export default function () {
   return (
@@ -28,16 +28,16 @@ export default function () {
   <div>
     <h1 className='text-center'>Join us at social media to meet our Crew!</h1>
     <hr/>
-    <link
+    <Link>
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    </Link>
       <div class="social-links justify-center">
-        <a href=""><i className="fab fa-facebook-f"></i></a>
-        <a href=""><i className="fab fa-instagram"></i></a>
-        <a href=""><i className="fab fa-twitter"></i></a>
-        <a href=""><i className="fab fa-github"></i></a>
-        <a href=""><i className="fab fa-linkedin-in"></i></a>
+        <Link href=""><i className="fab fa-facebook-f"></i></Link>
+        <Link href=""><i className="fab fa-instagram"></i></Link>
+        <Link href=""><i className="fab fa-twitter"></i></Link>
+        <Link href=""><i className="fab fa-github"></i></Link>
+        <Link href=""><i className="fab fa-linkedin-in"></i></Link>
       </div>
     </div>
   <Footer/>
