@@ -52,7 +52,7 @@ export default function AdoptUs() {
 
       {modalVisible && (
         <div className="modal" onClick={closeModal}>
-          <img src={selectedImage} alt="Selected Animal" className="modal-content" onClick={(e) => e.stopPropagation()} />
+          <Image src={selectedImage} alt="Selected Animal" className="modal-content" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
 

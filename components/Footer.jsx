@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 
     export default function Footer() {
       return (
@@ -11,16 +11,16 @@ import React from 'react'
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
-                <a href="aboutus" class="hover:underline me-4 md:me-6">About</a>
+                <Link href="aboutus" class="hover:underline me-4 md:me-6">About</Link>
             </li>
             <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                <Link href="#" class="hover:underline me-4 md:me-6">Privacy Policy</Link>
             </li>
             <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                <Link href="#" class="hover:underline me-4 md:me-6">Licensing</Link>
             </li>
             <li>
-                <a href="contact" class="hover:underline">Contact</a>
+                <Link href="contact" class="hover:underline">Contact</Link>
             </li>
         </ul>
         </div>

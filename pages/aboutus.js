@@ -70,7 +70,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="w-full px-4 mb-8 lg:w-1/2 lg:mb-0 ">
-                <img src='https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=1851&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                <Image src='https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=1851&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 
                         className="relative z-40 object-cover w-full h-full rounded-lg"/>
                 </div>

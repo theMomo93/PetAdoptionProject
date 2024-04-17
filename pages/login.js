@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '@/components/Footer'
-
+import Image from 'next/image'
 export default function login() {
 
 const handleClick=()=>{
@@ -13,7 +13,7 @@ const handleClick=()=>{
         <section class="backgroundImage bg-gray-50 dark:bg-gray-300">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-black-600 dark:text-black">
-      <img
+      <Image
             src="https://pngimg.com/uploads/paw/paw_PNG9.png"
             className="h-20"
             alt="Logo"
