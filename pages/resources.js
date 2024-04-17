@@ -2,6 +2,12 @@ import Footer from '@/components/Footer'
 import React from 'react'
 import Link from 'next/link'
 
+import { FaFacebookF } from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa"
+import {FaTwitter} from "react-icons/fa"
+import {FaLinkedinIn} from "react-icons/fa"
+import {FaGithub} from "react-icons/fa"
+
 export default function resources() {
   return (
     <div>
@@ -32,12 +38,13 @@ export default function resources() {
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </Link>
-      <div class="social-links justify-center">
-        <Link href=""><i className="fab fa-facebook-f"></i></Link>
-        <Link href=""><i className="fab fa-instagram"></i></Link>
-        <Link href=""><i className="fab fa-twitter"></i></Link>
-        <Link href=""><i className="fab fa-github"></i></Link>
-        <Link href=""><i className="fab fa-linkedin-in"></i></Link>
+      <div class="flex m-2 p-4 text-4xl px-8 justify-center ">
+      
+      <a className='px-4 py-4 bg-blue-500 text-white rounded-full hover:text-blue-600 hover:bg-white' href="#"><FaFacebookF /></a>
+          <a className='mx-2 px-4 py-4 bg-pink-600 text-white rounded-full hover:bg-white hover:text-red-600' href="#"><FaInstagram /></a>
+          <a className='mx-2 px-4 py-4 bg-blue-600 text-white rounded-full hover:text-blue-600 hover:bg-white' href="#"><FaTwitter /></a>
+          <a className='mx-2 px-4 py-4 bg-black text-white rounded-full hover:text-black hover:bg-white' href="#"><FaGithub /></a>
+          <a className='mx-2 px-4 py-4 bg-blue-600 text-white rounded-full hover:text-blue-600 hover:bg-white' href="#"><FaLinkedinIn /></a>
       </div>
     </div>
   <Footer/>

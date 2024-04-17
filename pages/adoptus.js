@@ -23,12 +23,15 @@ export default function AdoptUs() {
         {data.animals.map((animal) => (
           <div key={animal.name} className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-4">
             <div className="flex flex-col h-full max-w-md mx-auto p-6 border-gray-200 rounded-lg bg-yellow-900 bg-opacity-50">
-              <Image
-                onClick={() => openModal(animal.image)}
-                src={animal.image}
-                alt={animal.name}
-                className="w-full h-40 object-contain mb-4 cursor-pointer"
-              />
+            <Image
+  onClick={() => openModal(animal.image)}
+  src={animal.image}
+  alt={animal.name}
+  width={800}
+  height={700}
+  className="w-full h-58 object-contain mb-4 cursor-pointer"
+/>
+
               <Link href="#" className="flex-grow">
                 <h5 className="text-lg font-semibold text-gray-900 font-bold">{animal.name} </h5>
               </Link>
@@ -53,10 +56,17 @@ export default function AdoptUs() {
       </div>
 
       {modalVisible && (
-        <div className="modal" onClick={closeModal}>
-          <Image src={selectedImage} alt="Selected Animal for adoption" className="modal-content" onClick={(e) => e.stopPropagation()} />
-        </div>
-      )}
+  <div className="modal" onClick={closeModal}>
+    <Image 
+      src={selectedImage} 
+      alt="Selected Animal for adoption" 
+      className="modal-content" 
+      width={800}  // Set the same width as in the map function
+      height={500} // Set the same height as in the map function
+      onClick={(e) => e.stopPropagation()} 
+    />
+  </div>
+)}
 
       <Footer />
     </>

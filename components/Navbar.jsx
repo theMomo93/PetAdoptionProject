@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Paw from "../img/paw_PNG9.png"
 
 
 export default function Navbar() {
@@ -15,9 +16,9 @@ export default function Navbar() {
       <nav className="border-white-200 dark:bg-green-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Image
-            src="https://pngimg.com/uploads/paw/paw_PNG9.png"
-            className="h-20"
-            alt="Logo"
+            src={Paw}
+            className="h-8  w-8"
+            alt="Logo"lz
           />
           <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
             PetMatch

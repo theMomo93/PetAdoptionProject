@@ -27,7 +27,7 @@ const registerUser = async (e) => {
           <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-black">
             <Image
               src={Paw}
-              className="h-20"
+              className="h-8 w-8"
               alt="Logo of pet adoption"
             />
             PetMatch Login

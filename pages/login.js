@@ -2,15 +2,15 @@ import React from 'react'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
+import Paw from "../img/paw_PNG9.png"
 
 
 
 export default function login() {
 
-const handleClick=()=>{
-
+function handleClick(){
+    
 }
-
 
   return (
     <div>
@@ -18,8 +18,8 @@ const handleClick=()=>{
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <Link href="#" class="flex items-center mb-6 text-2xl font-semibold text-black-600 dark:text-black">
       <Image
-            src="https://pngimg.com/uploads/paw/paw_PNG9.png"
-            className="h-20"
+            src={Paw}
+            className="h-8 w-8"
             alt="Logo of pet adoption"
           />
           PetMatch Login    
